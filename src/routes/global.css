@@ -1,0 +1,44 @@
+/* Globals Styles */
+:root {
+    --white: #ffffff;
+    --blue: #2E78A0;
+    --light-blue: rgba(46, 120, 160, 0.42);;
+    --black: #000000;
+    --gray: rgba(41, 41, 41, 0.65);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+
+
+/* WhatsApp button Styles */
+.button--WhatsApp {
+    position: fixed;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    z-index: 5;
+    padding: 15px;
+    background-color: #3acd47;
+    background-image: linear-gradient(0deg, #3acd47 0%, #58f474 100%);
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 25px 0px rgb(0 0 0 / 49%);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.49);
+    box-shadow: 5px 5px 25px 0px rgb(0 0 0 / 49%);
+}
+.button--WhatsApp span svg {
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+}
