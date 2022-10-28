@@ -1,0 +1,52 @@
+.header {
+    position: absolute;
+    top: 44px;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 65px;
+    background-color: var(--light-blue);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header.stik {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.header--logo {
+    max-height: 60px;
+    height: 100%;
+}
+.header--logo img {
+    max-height: 60px;
+    height: 100%;
+}
+.header--menu {
+}
+.header--menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+.header--menu ul li {
+    list-style: none;
+}
+.header--menu ul li a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+}
+.header--menu .header--menu__contacto {
+    padding: 15px 25px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.header--menu .header--menu__contacto a {
+    color: rgba(46, 120, 160, 0.42);
+}
