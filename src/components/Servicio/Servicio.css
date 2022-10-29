@@ -1,0 +1,27 @@
+.servicios {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.servicios--title {
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    background-color: var(--white);
+    border: 6px solid var(--blue) ;
+    border-radius: 25px;
+}
+.servicios--title h1 {
+    color: var(--blue);
+    font-size: 6.4rem;
+    font-weight: bold;
+    text-align: center;
+}
