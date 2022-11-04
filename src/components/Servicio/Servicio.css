@@ -1,27 +1,108 @@
-.servicios {
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-.servicios--title {
-    width: 100%;
+.servicio {
+    min-width: 300px;
     max-width: 400px;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 235px;
     margin: 25px;
     background-color: var(--white);
-    border: 6px solid var(--blue) ;
     border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.75);
+    animation: sscale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;
 }
-.servicios--title h1 {
-    color: var(--blue);
-    font-size: 6.4rem;
-    font-weight: bold;
+.servicio .servicio--title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
+.servicio .servicio--title h2 {
+    padding: 0 15px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.servicio .servicio--title .servicio--title__text {
+    display: none;
+}
+.servicio .servicio--title__img {
+    max-width: 180px;
+    max-height: 235px;
+}
+.servicio .servicio--title img {
+    max-width: 180px;
+    height: 235px;
+    object-fit: cover;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    animation: scale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.servicioHover {
+    min-width: 300px;
+    max-width: 400px;
+    height: 235px;
+    margin: 25px;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    animation: sscale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;
+}
+.servicioHover .servicio--title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.servicioHover .servicio--title h2 {
+    display: none;
+}
+.servicioHover .servicio--title .servicio--title__text {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    max-width: 400px;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 25px;
+    transform: scale(1);
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.servicioHover .servicio--title .servicio--title__text p {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: bold;
+    animation: sscale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;
+}
+.servicioHover .servicio--title__img {
+    max-width: 400px;
+    max-height: 235px;
+}
+.servicioHover .servicio--title img {
+    max-width: 100%;
+    width: 400px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 25px;
+    transform: scale(1);
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    filter: blur(1.5px);
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+}
+
+
+@keyframes scale-down-center{0%{width: 400px; transform:scale(1.05)}100%{width: 180px;transform:scale(1)}}
+@keyframes sscale-down-center{0%{transform:scale(1.01)}100%{transform:scale(1)}}

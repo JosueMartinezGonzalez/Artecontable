@@ -1,0 +1,95 @@
+.headerBurger {
+    display: none;
+    position: absolute;
+    top: 44px;
+    z-index: 5;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: var(--light-blue);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.headerBurger--menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.headerBurger--menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBurger--menu__logo img {
+    width: 100%;
+    max-width: 230px;
+    min-width: 100px;
+}
+.headerBurger--menu span {
+    font-size: 7.6rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerBurger--nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 300px;
+    width: 300px;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+    background-color: var(--blue);
+    overflow-y: hidden;
+    z-index: 5;
+}
+.headerBurger--nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+    background-color: var(--blue);
+    overflow-y: hidden;
+    z-index: 5;
+}
+.headerBurger--nav span {
+    margin-bottom: 25px;
+    font-size: 7.6rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.headerBurger--nav span:hover {
+    opacity: 0.8;
+}
+.headerBurger--nav li {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+    border-radius: 25px;
+    border: 3px solid var(--white);
+}
+.headerBurger--nav li a {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.headerBurger--nav .headerBurger--menu__contacto {
+    padding: 15px 25px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+.headerBurger--nav .headerBurger--menu__contacto a {
+    color: rgba(46, 120, 160, 0.699);
+}

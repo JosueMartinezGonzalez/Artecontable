@@ -6,18 +6,18 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 15px 30px;
-    background-color: var(--gray);
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 25px 30px;
+    background-color: rgba(255, 255, 255, 0.205);
+    /* box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.418); */
     border-radius: 10px;
 }
 .ventaja h3 {
     color: var(--white);
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     font-weight: bold;
 }
 .ventaja p {
-    color: var(--white);
+    color: black;
     font-size: 2.2rem;
     font-weight: normal;
 }

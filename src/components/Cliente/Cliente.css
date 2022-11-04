@@ -7,7 +7,7 @@
     align-items: center;
     background-color: rgba(46, 120, 160, 0.05);
     border: 2.5px solid var(--blue);
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0px 4px 20px var(--light-blue);
 }
 .cliente img {

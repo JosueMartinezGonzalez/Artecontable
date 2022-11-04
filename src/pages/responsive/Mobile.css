@@ -1,0 +1,14 @@
+@media (max-width: 503px) {
+    /* HeaderBurger Styles */
+    header.headerBurger {
+        top: 94px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    /* Servicios Styles */
+    div.servicio .servicio--title h2 {
+        font-size: 1.5rem;
+    }
+}

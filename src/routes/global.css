@@ -2,7 +2,7 @@
 :root {
     --white: #ffffff;
     --blue: #2E78A0;
-    --light-blue: rgba(46, 120, 160, 0.42);;
+    --light-blue: rgba(46, 120, 160, 0.42);
     --black: #000000;
     --gray: rgba(41, 41, 41, 0.65);
 }
@@ -41,4 +41,9 @@ body {
     color: var(--white);
     width: 50px;
     height: 50px;
+}
+
+
+.none {
+    display: none;
 }

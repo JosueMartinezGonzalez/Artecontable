@@ -5,12 +5,13 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 75px 25px;
+    padding: 150px 25px;
 }
 .clientes h2 {
     color: var(--blue);
     font-size: 6.4rem;
     font-weight: bold;
+    text-align: center;
 }
 .clientes--content {
     width: 100%;
@@ -18,5 +19,5 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 50px;
 }

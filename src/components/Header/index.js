@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
 
 import logo from '@images/images/logo.jpeg'
 
@@ -20,7 +21,7 @@ const Header = () => {
     }
 
     useEffect(() => {
-        window.addEventListener('scroll',handleScroll)
+        window.addEventListener('scroll', handleScroll)
     })
 
     return (
@@ -30,10 +31,10 @@ const Header = () => {
             </div>
             <nav className="header--menu">
                 <ul>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Nuestros Clientes</a></li>
-                    <li className='header--menu__contacto'><a href="">Contactanos</a></li>
+                    <li><Link href="#" smooth={true} offset={-135} to="servicios">Servicios</Link></li>
+                    <li><Link href="#" smooth={true} offset={-135} to="nosotros">Nosotros</Link></li>
+                    <li><Link href="#" smooth={true} offset={-135} to="clientes">Nuestros Clientes</Link></li>
+                    <li className='header--menu__contacto'><Link href="#" smooth={true} to="contacto">Contactanos</Link></li>
                 </ul>
             </nav>
         </header>

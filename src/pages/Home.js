@@ -3,6 +3,7 @@ import React from 'react'
 
 import { HeaderInfo } from '../components/HeaderInfo/index'
 import { Header } from '../components/Header/index'
+import { HeaderBurger } from '../components/HeaderBurger/index'
 import { Corrusel } from '../components/Corrusel/index'
 import { Servicios } from '../components/Servicios/index'
 import { Nosotros } from '../components/Nosotros/index'
@@ -16,6 +17,7 @@ function Home() {
         <div>
             <HeaderInfo />
             <Header />
+            <HeaderBurger />
             <main>
                 <Corrusel />
                 <Servicios />

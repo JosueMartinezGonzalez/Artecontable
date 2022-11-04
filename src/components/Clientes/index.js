@@ -7,7 +7,7 @@ import './Clientes.css'
 
 function Clientes() {
     return(
-        <section className='clientes'>
+        <section className='clientes' name="clientes">
             <h2>Nuestros Clientes</h2>
             <div className="clientes--content">
                 <Cliente

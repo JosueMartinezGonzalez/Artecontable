@@ -2,6 +2,7 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 
+
 import './HeaderInfo.css'
 
 
